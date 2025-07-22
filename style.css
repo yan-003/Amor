@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #ffc1cc, #ffe6e6);
-  color: #820000;
+  background: linear-gradient(to right, #dbe9f4, #f4f1ec);
+  color: #2f2f2f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +13,11 @@ body {
 
 /* Página inicial */
 body.index {
-  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  background: linear-gradient(to bottom, #d7e3f4, #f1e9dc);
 }
 
 .botao-flutuante {
-  background-color: #ff69b4;
+  background-color: #8b0000;
   border: none;
   border-radius: 30px;
   padding: 20px 40px;
@@ -25,7 +25,12 @@ body.index {
   color: white;
   cursor: pointer;
   animation: pulse 2s infinite;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+.botao-flutuante:hover {
+  background-color: #a00000;
 }
 
 @keyframes pulse {
@@ -38,7 +43,7 @@ body.index {
 body.amor {
   flex-direction: column;
   padding: 20px;
-  background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee);
+  background: linear-gradient(to bottom right, #dbe4ed, #e6dfd3);
 }
 
 .container {
@@ -50,7 +55,7 @@ body.amor {
   max-width: 300px;
   border-radius: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   animation: fadeIn 2s ease-in;
 }
 
@@ -65,7 +70,7 @@ body.amor {
 }
 
 .contador-linha div {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 10px 15px;
   border-radius: 12px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
@@ -73,9 +78,9 @@ body.amor {
 
 .frase {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 30px;
-  color: #7b1fa2;
+  color: #4b1f1f;
   animation: fadeIn 3s ease-in-out;
 }
 
