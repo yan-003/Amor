@@ -28,7 +28,7 @@
     function atualizarContador() {
       const agora = new Date();
 
-      let ano = agora.getFullYear() - inicio.getFullYear();
+      let anos = agora.getFullYear() - inicio.getFullYear();
       let meses = agora.getMonth() - inicio.getMonth();
       let dias = agora.getDate() - inicio.getDate();
 
@@ -48,13 +48,13 @@
       const minutos = Math.floor(totalSegundos / 60) % 60;
       const segundos = totalSegundos % 60;
 
-      contador.innerHTML = `
-        <div><strong>${anos}</strong> anos</div>
-        <div><strong>${meses}</strong> meses</div>
-        <div><strong>${dias}</strong> dias</div>
-        <div><strong>${minutos}</strong> minutos</div>
-        <div><strong>${segundos}</strong> segundos</div>
-      `;
+     contador.innerHTML = `
+  <div><strong>${anos}</strong> ${anos === 1 ? 'ano' : 'anos'}</div>
+  <div><strong>${meses}</strong> ${meses === 1 ? 'mês' : 'meses'}</div>
+  <div><strong>${dias}</strong> ${dias === 1 ? 'dia' : 'dias'}</div>
+  <div><strong>${minutos}</strong> ${minutos === 1 ? 'minuto' : 'minutos'}</div>
+  <div><strong>${segundos}</strong> ${segundos === 1 ? 'segundo' : 'segundos'}</div>
+`;
     }
 
     setInterval(atualizarContador, 1000);
