@@ -77,55 +77,30 @@ body.amor {
   box-shadow: 0 0 4px rgba(0,0,0,0.05);
 }
 
-/* FRASE LONGA, ROMÂNTICA, COM FONTE MENOR */
-.frase {
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.8;
-  color: #3a2a2a;
-  animation: fadeIn 2s ease-in-out;
-  padding: 0 10px;
-  text-align: justify;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
+/* FRASE DENTRO DE UM CARD */
 .card-frase {
   background: linear-gradient(135deg, #fdf7f3, #fbeee3);
   border-radius: 16px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   padding: 24px;
-  margin: 20px;
+  margin: 20px auto;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-}
-
-.card-frase {
-  background: linear-gradient(135deg, #fdf7f3, #fbeee3);
-  border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  padding: 24px;
-  margin: 20px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   overflow: hidden;
 }
 
 .frase {
   font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-  font-family: 'Segoe UI', sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #3a2a2a;
+  animation: fadeIn 2s ease-in-out;
   text-align: justify;
   position: relative;
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
