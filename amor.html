@@ -9,8 +9,8 @@
 <body class="amor">
   <div class="container">
     <img src="foto.jpg" alt="Nosso amor" class="foto"/>
-    
-    <div id="contador" class="contador"></div>
+
+    <div id="contador" class="contador-linha"></div>
 
     <h1 class="frase">
       “O amor verdadeiro é aquele que o tempo não apaga, a distância não separa e a maldade não destrói.”
@@ -30,8 +30,8 @@
 
       if (dias < 0) {
         meses--;
-        const mesAnterior = new Date(agora.getFullYear(), agora.getMonth(), 0).getDate();
-        dias += mesAnterior;
+        const diasDoMesAnterior = new Date(agora.getFullYear(), agora.getMonth(), 0).getDate();
+        dias += diasDoMesAnterior;
       }
 
       if (meses < 0) {
@@ -39,13 +39,17 @@
         meses += 12;
       }
 
-      const diffSegundos = Math.floor((agora - inicio) / 1000);
+      const diffMs = agora - inicio;
+      const totalSegundos = Math.floor(diffMs / 1000);
+      const minutos = Math.floor(totalSegundos / 60) % 60;
+      const segundos = totalSegundos % 60;
 
       contador.innerHTML = `
-        <p><strong>${anos}</strong> anos</p>
-        <p><strong>${meses}</strong> meses</p>
-        <p><strong>${dias}</strong> dias</p>
-        <p><strong>${diffSegundos}</strong> segundos de amor</p>
+        <div><strong>${anos}</strong> anos</div>
+        <div><strong>${meses}</strong> meses</div>
+        <div><strong>${dias}</strong> dias</div>
+        <div><strong>${minutos}</strong> minutos</div>
+        <div><strong>${segundos}</strong> segundos</div>
       `;
     }
 
