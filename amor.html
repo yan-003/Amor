@@ -48,13 +48,13 @@
       const minutos = Math.floor(totalSegundos / 60) % 60;
       const segundos = totalSegundos % 60;
 
-     contador.innerHTML = `
-  <div><strong>${anos}</strong> ${anos === 1 ? 'ano' : 'anos'}</div>
-  <div><strong>${meses}</strong> ${meses === 1 ? 'mês' : 'meses'}</div>
-  <div><strong>${dias}</strong> ${dias === 1 ? 'dia' : 'dias'}</div>
-  <div><strong>${minutos}</strong> ${minutos === 1 ? 'minuto' : 'minutos'}</div>
-  <div><strong>${segundos}</strong> ${segundos === 1 ? 'segundo' : 'segundos'}</div>
-`;
+      contador.innerHTML = `
+        <div><strong>${anos}</strong> ${anos === 1 ? 'ano' : 'anos'}</div>
+        <div><strong>${meses}</strong> ${meses === 1 ? 'mês' : 'meses'}</div>
+        <div><strong>${dias}</strong> ${dias === 1 ? 'dia' : 'dias'}</div>
+        <div><strong>${minutos}</strong> ${minutos === 1 ? 'minuto' : 'minutos'}</div>
+        <div><strong>${segundos}</strong> ${segundos === 1 ? 'segundo' : 'segundos'}</div>
+      `;
     }
 
     setInterval(atualizarContador, 1000);
