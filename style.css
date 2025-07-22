@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #f3f4f6, #e5e7eb);
-  color: #1f2937;
+  background: linear-gradient(to right, #faf4ef, #f5e0d3);
+  color: #2c2c2c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +13,11 @@ body {
 
 /* Página inicial */
 body.index {
-  background: linear-gradient(to bottom, #d1d5db, #f9fafb);
+  background: linear-gradient(to bottom, #f5e0d3, #faf4ef);
 }
 
 .botao-flutuante {
-  background-color: #8b1e1e;
+  background-color: #8b3a3a;
   border: none;
   border-radius: 30px;
   padding: 20px 40px;
@@ -30,7 +30,7 @@ body.index {
 }
 
 .botao-flutuante:hover {
-  background-color: #a12424;
+  background-color: #a04545;
 }
 
 @keyframes pulse {
@@ -43,7 +43,7 @@ body.index {
 body.amor {
   flex-direction: column;
   padding: 20px;
-  background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+  background: linear-gradient(to bottom right, #faf4ef, #fbe3d9);
 }
 
 .container {
@@ -77,12 +77,12 @@ body.amor {
   box-shadow: 0 0 4px rgba(0,0,0,0.05);
 }
 
-/* FRASE LONGA E LEVE */
+/* FRASE LONGA, ROMÂNTICA, COM FONTE MENOR */
 .frase {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.8;
-  color: #374151;
+  color: #3a2a2a;
   animation: fadeIn 2s ease-in-out;
   padding: 0 10px;
   text-align: justify;
