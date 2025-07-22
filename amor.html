@@ -9,8 +9,12 @@
 <body class="amor">
   <div class="container">
     <img src="foto.jpg" alt="Nosso amor" class="foto"/>
-    <h1 class="frase">“O amor verdadeiro é aquele que o tempo não apaga, a distância não separa e a maldade não destrói.”</h1>
+    
     <div id="contador" class="contador"></div>
+
+    <h1 class="frase">
+      “O amor verdadeiro é aquele que o tempo não apaga, a distância não separa e a maldade não destrói.”
+    </h1>
   </div>
 
   <script>
@@ -19,18 +23,29 @@
 
     function atualizarContador() {
       const agora = new Date();
-      const diff = agora - inicio;
 
-      const anos = agora.getFullYear() - inicio.getFullYear();
-      const meses = agora.getMonth() - inicio.getMonth() + (anos * 12);
-      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const segundos = Math.floor(diff / 1000);
+      let anos = agora.getFullYear() - inicio.getFullYear();
+      let meses = agora.getMonth() - inicio.getMonth();
+      let dias = agora.getDate() - inicio.getDate();
+
+      if (dias < 0) {
+        meses--;
+        const mesAnterior = new Date(agora.getFullYear(), agora.getMonth(), 0).getDate();
+        dias += mesAnterior;
+      }
+
+      if (meses < 0) {
+        anos--;
+        meses += 12;
+      }
+
+      const diffSegundos = Math.floor((agora - inicio) / 1000);
 
       contador.innerHTML = `
         <p><strong>${anos}</strong> anos</p>
         <p><strong>${meses}</strong> meses</p>
         <p><strong>${dias}</strong> dias</p>
-        <p><strong>${segundos}</strong> segundos</p>
+        <p><strong>${diffSegundos}</strong> segundos de amor</p>
       `;
     }
 
