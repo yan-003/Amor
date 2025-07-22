@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+.balão {
+  background-color: #ffcc00;
+  padding: 20px 40px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.balão a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.foto img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.tempo {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.frase {
+  font-size: 22px;
+  color: #333;
+  margin-top: 30px;
+  line-height: 1.5;
+}
