@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #dbe9f4, #f4f1ec);
-  color: #2f2f2f;
+  background: linear-gradient(to right, #f2f2f2, #e4e4e4);
+  color: #2e2e2e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +13,11 @@ body {
 
 /* Página inicial */
 body.index {
-  background: linear-gradient(to bottom, #d7e3f4, #f1e9dc);
+  background: linear-gradient(to bottom, #d3d3d3, #ffffff);
 }
 
 .botao-flutuante {
-  background-color: #8b0000;
+  background-color: #4b1f1f;
   border: none;
   border-radius: 30px;
   padding: 20px 40px;
@@ -30,7 +30,7 @@ body.index {
 }
 
 .botao-flutuante:hover {
-  background-color: #a00000;
+  background-color: #6a2b2b;
 }
 
 @keyframes pulse {
@@ -43,53 +43,4 @@ body.index {
 body.amor {
   flex-direction: column;
   padding: 20px;
-  background: linear-gradient(to bottom right, #dbe4ed, #e6dfd3);
-}
-
-.container {
-  max-width: 500px;
-}
-
-.foto {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  animation: fadeIn 2s ease-in;
-}
-
-.contador-linha {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  animation: fadeInUp 1s ease forwards;
-}
-
-.contador-linha div {
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 10px 15px;
-  border-radius: 12px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-.frase {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #4b1f1f;
-  animation: fadeIn 3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  background: linear-gradient(t
