@@ -32,3 +32,35 @@ body {
   background-color: #ff3d68;
   transform: scale(1.05);
 }
+.container {
+  padding: 40px 20px;
+}
+
+.foto {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+#tempo {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.frase {
+  font-size: 22px;
+  margin-top: 30px;
+  line-height: 1.8;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+}
