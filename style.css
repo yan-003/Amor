@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #f2f2f2, #e4e4e4);
-  color: #2e2e2e;
+  background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+  color: #1f2937;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +13,11 @@ body {
 
 /* Página inicial */
 body.index {
-  background: linear-gradient(to bottom, #d3d3d3, #ffffff);
+  background: linear-gradient(to bottom, #d1d5db, #f9fafb);
 }
 
 .botao-flutuante {
-  background-color: #4b1f1f;
+  background-color: #8b1e1e;
   border: none;
   border-radius: 30px;
   padding: 20px 40px;
@@ -30,7 +30,7 @@ body.index {
 }
 
 .botao-flutuante:hover {
-  background-color: #6a2b2b;
+  background-color: #a12424;
 }
 
 @keyframes pulse {
@@ -43,4 +43,52 @@ body.index {
 body.amor {
   flex-direction: column;
   padding: 20px;
-  background: linear-gradient(t
+  background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+}
+
+.container {
+  max-width: 600px;
+}
+
+.foto {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: fadeIn 2s ease-in;
+}
+
+/* CONTADOR EM LINHA ÚNICA */
+.contador-linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.95rem;
+  margin: 10px 0 25px;
+  flex-wrap: wrap;
+}
+
+.contador-linha div {
+  flex: 1 1 auto;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background-color: #ffffffcc;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+}
+
+/* FRASE LONGA E LEVE */
+.frase {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #374151;
+  animation: fadeIn 2s ease-in-out;
+  padding: 0 10px;
+  text-align: justify;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
