@@ -92,3 +92,37 @@ body.amor {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.card-frase {
+  background: linear-gradient(135deg, #fdf7f3, #fbeee3);
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-frase::before {
+  content: "❤";
+  position: absolute;
+  font-size: 120px;
+  color: rgba(255, 192, 203, 0.08);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  pointer-events: none;
+}
+
+.frase {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: justify;
+  position: relative;
+  z-index: 1;
+}
